@@ -1,0 +1,543 @@
+.ugcVideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: .5;
+  z-index: -1;
+
+}
+
+/* Navigation Styles Start */
+
+:root{
+  --background: #4b2e83;
+}
+.navbar {
+  text-align: center;
+  z-index: 999;
+  margin-left: -150px;
+}
+
+.logo {
+  margin-top: 15px;
+  left: 40%;
+  position: absolute;
+}
+
+.nav-toggle{
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+  display: none;
+}
+
+.nav-toggle-label{
+  position: fixed;
+  top: 3em;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: block;
+  align-items: center;
+  color: black;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  display: block;
+  background: black;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  content: '';
+  position: absolute;
+}
+.nav-toggle-label span::before{
+  bottom: 7px;
+}
+.nav-toggle-label span::after {
+  top: 7px;
+}
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+.nav-toggle:checked ~ nav a{
+  opacity: 1;
+  transition:  opacity 150ms ease-in-out 250ms;
+}
+nav{
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  color: black;
+  transform: scale(1,0);
+  transform-origin: top;
+  transition: transform 150ms ease-in-out;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 10em; 
+}
+nav a{
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+nav a:hover{
+  color: blue;
+}
+
+/*Center Text under navbar */
+
+.landing-text{
+  position: absolute;
+  top: 25vh;
+  width: 100%;
+}
+
+.mid-col{
+  margin-left: -70px;
+}
+
+.right-col{
+  border-left: 1px black solid;
+  margin-left: 50px;
+}
+
+.slide-enter{
+  transform: translateX(-100%);
+}
+
+.slide-enter.slide-enter-active{
+  transform: translateX(0);
+  transition: transform .5s ease-out;
+}
+
+.slide-leave{
+  transform: translateX(0);
+}
+.slide-leave.slide-leave-active{
+  transform: translateX(100%);
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+
+.slide-appear{
+  opacity: 0;
+}
+
+.slide-appear.slide-appear-active{
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+/* ABOUT PAGE */
+
+.mission-statement{
+  display: block;
+}
+
+.mission-statement-header, .purpose-title, .about-title, .pillar-title{
+  margin-top: 120px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.mission-statement-body{
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+}
+
+.purpose-body, .about-body-one, .about-body-two, .pillar-container{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.our-pillars{
+
+}
+
+/*   ORGANIZATIONS   */
+.org-text{
+  margin-top: 70px;
+}
+
+.org-title{
+  font-size: 53px;
+  margin-top: 100px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.sororities{
+  border-left: 1px black dotted;
+}
+
+/* UGC BLOG POSTS */
+.ugc-posts{
+  margin-top: 150px;
+}
+
+.post-title{
+  margin-top: 120px;
+  font-style: 'Poppins', sans-serif;
+  font-size: 40px;
+  text-align: center;
+} 
+
+.single-post{ /* Card Style */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.ugc-posts img {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/*   Calendar   */
+.calendar-container{
+  padding-top: 100px;
+}
+
+
+/*   TABLET 1   */
+@media screen and (min-width: 575px) {
+  .logo{
+    left: 40%;
+    position: absolute;
+  }
+  .landing-text{
+    margin-left: 60px; 
+  }
+  .left-col{
+    margin-right: 70px;
+  }
+}
+
+/*   SMOL WINDOW OPEN   */
+@media screen and (min-width: 1200px) {
+  .logo{
+    left: 0%;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: absolute;
+  }
+  .nav-toggle-label{
+    display: none;
+  }
+  header{
+    display: grid;
+    grid-template-columns: 1fr auto  minmax(400px, 3fr) 1fr;
+  }
+  nav{
+    all: unset;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav a{
+    color: white;
+  }
+  nav ul {
+    display: flex;
+    margin-left: 200px;
+  }
+  nav li{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
+    margin-left: 1em;
+    margin-bottom: 0;
+    background: var(--background)
+  }
+  nav a{
+    opacity: 1;
+  }
+  .landing-text{
+    margin: auto;
+    width: 50%;
+    left: 10em;
+  } 
+  .mid-col{
+    margin-left: 0px;
+  }
+  .right-col{
+    border-left: 1px black solid;
+    margin-left: 0px;
+  }
+    /*   About Page   */
+    .mission-statement-header{
+      position: absolute;
+      margin-top: 60px;
+      left: 25%;
+      font-size: 63px;
+    }
+  
+    .mission-statement-body{
+      position: absolute;
+      margin-top: 150px;
+      width: 50%;
+      left: 25%;
+      font-size: 22px;
+    }
+  
+    .purpose{
+      position: absolute;
+      margin-top: 350px;
+      width: 70%;
+      left: 10%;
+  
+    }
+    .purpose-title{
+      display: inline-block;
+      float: left;
+      margin-top: 0;
+      padding-top: 0;
+      width: 50%;
+      font-size: 80px;
+    }
+    .purpose-body{
+      display: inline-block;
+      float: left;
+      width: 50%;
+      text-align: left;
+      font-size: 16px;
+    }
+  
+    .about-us{
+      position: absolute;
+      margin-top: 730px;
+      width: 70%;
+      left: 10%;
+    }
+    .about-title{
+      display: inline-block;
+      float: left;
+      margin-top: 0;
+      padding-top: 0;
+      width: 50%;
+      font-size: 80px;
+    }
+    .about-body-one, .about-body-two{
+      display: inline-block;
+      float: left;
+      width: 50%;
+      text-align: left;
+      font-size: 16px;
+    }
+  
+    .about-body-two{
+      margin-top: 20px;
+      float: right;
+    }
+    .about-us-us{
+      text-align: left;
+    }
+    .our-pillars{
+      position: absolute;
+      margin-top: 1350px;
+      width: 70%;
+      left: 10%;
+    }
+    .pillar-title{
+      display: inline-block;
+      float: left;
+      margin-top: 0;
+      padding-top: 0;
+      width: 50%;
+      font-size: 80px;
+    }
+    .pillar-one, .pillar-two, .pillar-three{
+      font-size: 58px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .pillar-container{
+      display: inline-block;
+      float: right;
+      width: 50%;
+      text-align: left;
+      font-size: 16px;
+    }
+
+    /* UGC BLOG POSTS*/
+    .ugc-posts{
+      margin-top: 0px;
+    }
+
+    .post-title{
+      width: 80%;
+      display: block;
+      text-align: center;
+    }
+
+    .single-post{
+      width: 100%;
+      display: block;
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+
+    .post-container{
+      width: 80%;
+      margin: 0 auto;
+      padding-left: 80px;
+    }
+
+    /*   Calendar   */
+    .calendar-container{
+      width: 100%;
+      text-align: center;
+      display: block;
+    }
+
+}
+
+/*   BIGG SCREEN   */
+@media screen and (min-width: 1259px) {
+  .nav-toggle-label{
+    display: none;
+  }
+  header{
+    display: grid;
+    grid-template-columns: 1fr auto  minmax(600px, 3fr) 1fr;
+  }
+  .logo{
+    left: 0%;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: absolute;
+  }
+  nav{
+    all: unset;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav a{
+    color: white;
+  }
+  nav ul {
+    display: flex;
+    margin-left: 400px;
+  }
+  nav li{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    background: var(--background)
+
+  }
+  nav a{
+    opacity: 1;
+  }
+  /* Landing Page */
+  .landing-text{
+    position: absolute;
+    top: 25vh;
+    width: 100%;
+  }
+  .left-col h3{
+    font-size: 40px;
+  }
+  .mid-col h1{
+    font-size: 80px;
+  }
+  .right-col p{
+    font-size: 50px;
+  } 
+  /*   About Page   */
+  .mission-statement-header{
+    position: absolute;
+    margin-top: 60px;
+    left: 25%;
+    font-size: 63px;
+  }
+
+  .mission-statement-body{
+    position: absolute;
+    margin-top: 150px;
+    width: 50%;
+    left: 25%;
+    font-size: 22px;
+  }
+
+  .purpose{
+    position: absolute;
+    margin-top: 350px;
+    width: 70%;
+    left: 10%;
+
+  }
+  .purpose-title{
+    display: inline-block;
+    float: left;
+    margin-top: 0;
+    padding-top: 0;
+    width: 50%;
+    font-size: 80px;
+  }
+  .purpose-body{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .about-us{
+    position: absolute;
+    margin-top: 700px;
+    width: 70%;
+    left: 10%;
+  }
+  .about-title{
+    display: inline-block;
+    float: left;
+    margin-top: 0;
+    padding-top: 0;
+    width: 50%;
+    font-size: 80px;
+  }
+  .about-body-one, .about-body-two{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .about-body-two{
+    margin-top: 20px;
+    float: right;
+  }
+  .about-us-us{
+    text-align: left;
+  }
+  
+}

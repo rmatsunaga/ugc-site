@@ -1,0 +1,339 @@
+import React, { Component } from 'react';
+import {
+  Row,
+  Col
+} from "reactstrap";
+//import "bootstrap/dist/css/bootstrap.css";
+import '../App.css';
+import { CSSTransitionGroup } from 'react-transition-group';
+import SigmaPsiZetaPic from './organizationPics/sor/sigmaPsiZeta.jpg';
+import AKDPhiPic from './organizationPics/sor/AKDPhi.png';
+import ChiSigmaAlphaPic from './organizationPics/sor/ChiSigmaAlpha.jpg';
+import DeltaKappaDeltaPic from './organizationPics/sor/DeltaKappaDelta.png';
+import GammaAlphaOmegaPic from './organizationPics/sor/GammaAlphaOmega.png';
+import LambdaThetaAlphaPic from './organizationPics/sor/LambdaThetaAlpha.png';
+import PiNuIotaPic from './organizationPics/sor/PiNuIota.jpg';
+import SigmaLambdaGammaPic from './organizationPics/sor/SigmaLambdaGamma.jpg';
+import DeltaLambdaPhiPic from './organizationPics/frat/DeltaLambdaPhi.jpg';
+import LambdaPhiEpsilonPic from './organizationPics/frat/LambdaPhiEpsilon.jpg';
+import OmegaDeltaPhiPic from './organizationPics/frat/OmegaDeltaPhi.png';
+import PiAlphaPhiPic from './organizationPics/frat/PiAlphaPhi.png';
+import SigmaLambdaBetaPic from './organizationPics/frat/SigmaLambdaBeta.jpg';
+
+
+
+const OrganizationsRoute = () => {
+    return(
+      <CSSTransitionGroup transitionName="slide" transitionEnterTimeout={500} transitionLeaveTimeout={500} transitionAppear={true} transitionAppearTimeout={500}>
+        <Organizations />
+      </CSSTransitionGroup>
+    );
+  };
+
+class Organizations extends Component {
+    render(){
+        return(
+            <div className="org-text">
+                <OrgTitle />
+                <Row>
+                    <Col className="fraternities">
+                        <div className="frat-header">
+                            Fraternities
+                        </div>
+                        <DeltaLambdaPhi />
+                        <LambdaPhiEpsilon />
+                        <OmegaDeltaPhi />
+                        <PiAlphaPhi />
+                        <SigmaLambdaBeta />
+                    </Col>
+                    <Col className="sororities">
+                        <div className="frat-header">
+                            Sororities
+                        </div>
+                        <AlphaKappaDeltaPhi />
+                        <ChiSigmaAlpha />
+                        <DeltaKappaDelta />
+                        <GammaAlphaOmega />
+                        <LambdaThetaAlpha />
+                        <PiNuIota />
+                        <SigmaLambdaGamma />
+                        <SigmaPsiZeta />
+                    </Col>
+                </Row>
+
+            </div>
+        );
+    }
+}
+class SigmaPsiZeta extends Component{
+    render(){
+        return(
+            <div>
+            <div className="frat-name">
+                ΣΨΖ​
+            </div>
+            <img src={SigmaPsiZetaPic}/>
+            <div>
+                Sigma Psi Zeta - Rho Chapter
+                <br />
+                <a href="http://www.uwsyz.com/">Official Website</a>
+            </div>
+            <div className = "">
+                "We are a cultural, social, educational and community service oriented sorority. We embody the ideals of strong independent women, loyalty, allegiance, and dedication in the spirit of sisterhood. Rho Chapter of Sigma Psi Zeta was formally recognized on November 22, 2003, and has been going strong since."
+            </div>
+            </div>
+        );
+    }
+}
+
+class SigmaLambdaGamma extends Component{
+    render(){
+        return(
+            <div>
+            <div className="frat-name">
+                ΣΛΓ
+            </div>
+            <img src={SigmaLambdaGammaPic}/>
+            <div>
+                Sigma Lambda Gamma - Upsilon Gamma Chapter
+                <br />
+                <a href="http://udubgammas.wixsite.com/upsilongamma">Official Website</a>
+            </div>
+            <div className = "">
+                "Sigma Lambda Gamma strives to be the premier organization committed to providing a mechanism of empowerment to all women."
+            </div>
+            </div>
+        );
+    }
+}
+
+class PiNuIota extends Component{
+    render(){
+        return(
+            <div>
+            <div className="frat-name">
+                ΠΝΙ
+            </div>
+            <img src = {PiNuIotaPic}/>
+            <div>
+                Pi Nu Iota - Alpha Chapter
+                <br />
+                <a href="http://pinuiota.com/">Official Website</a>
+            </div>
+            <div className = "">
+                "The care and dedication to found this group has materialized into a movement that will unite and bond Filipina Sisters together in the efforts to discover our strength as women and to provide for our younger Sisters a place to grow."
+            </div>
+            </div>
+        );
+    }
+}
+class LambdaThetaAlpha extends Component{
+    render(){
+        return(
+            <div>
+            <div className="frat-name">
+                ΛΘΑ​
+            </div>
+            <img src = {LambdaThetaAlphaPic}/>
+            <div>
+                Lambda Theta Alpha - Gamma Omicron Chapter
+                <br />
+                <a href="https://www.facebook.com/LTAGammaOmicron/">Official Facebook Page</a>
+            </div>
+            <div className = "">
+                "The purpose of Lambda Theta Alpha is to provide a sisterhood based on unity, love and respect."
+            </div>
+            </div>
+        );
+    }
+}
+class GammaAlphaOmega extends Component{
+    render(){
+        return(
+            <div>
+                <div className="frat-name">
+                    ΓΑΩ
+                </div>
+                <img src = {GammaAlphaOmegaPic}/>
+                <div>
+                    Gamma Alpha Omega - Gamma Chapter
+                    <br />
+                    <a href="http://uwgamma.wixsite.com/genuinegammas">Official Website</a>
+                </div>
+                <div className = "">
+                    "The UW Gammas are the first Latina Founded Sorority to land on campus and the first in the Pacific Northwest."
+                </div>
+            </div>
+        );
+    }
+}
+class DeltaKappaDelta extends Component{
+    render(){
+        return(
+            <div>
+                <div className="frat-name">
+                    ΔΚΔ
+                </div>
+                <img src = {DeltaKappaDeltaPic}/>
+                <div>
+                    Delta Kappa Delta -  UW Colony
+                    <br />
+                    <a href="https://www.facebook.com/dkduw/">Official Facebook Page</a>
+                </div>
+                <div className = "">
+                    "We are the one and ONLY National South-Asian Service Sorority founded on October 1, 1999 at Texas A&M University."
+                </div>
+            </div>
+        );
+    }
+}
+class ChiSigmaAlpha extends Component{
+    render(){
+        return(
+            <div>
+                <div className="frat-name">
+                    ΧΣΑ
+                </div>
+                <img src = {ChiSigmaAlphaPic}/>
+                <div>
+                    Chi Sigma Alpha - Alpha Chapter
+                    <br />
+                    <a href="https://www.facebook.com/uwchisigmaalpha/">Official Facebook Page</a>
+                </div>
+                <div className = "">
+                    "These letters don't make me better than you. These letters make me better than I used to be."
+                </div>
+            </div>
+        );
+    }
+}
+class AlphaKappaDeltaPhi extends Component{
+    render(){
+        return(
+            <div>
+                <div className="frat-name">
+                    αΚΔΦ
+                </div>
+                <img src = {AKDPhiPic}/>
+                <div>
+                    alpha Kappa Delta Phi - Pi Chapter
+                    <br />
+                    <a href="https://uwakdphi.weebly.com/">Official Website</a>
+                </div>
+                <div className = "">
+                    "alpha Kappa Delta Phi International Sorority, Inc. is the first, largest, and ONLY international Asian-interest sorority."
+                </div>
+            </div>
+        );
+    }
+}
+class DeltaLambdaPhi extends Component{
+    render(){
+        return(
+            <div>
+                <div className="frat-name">
+                    ΔΛΦ
+                </div>
+                <img src = {DeltaLambdaPhiPic}/>
+                <div>
+                    Delta Lambda Phi - Psi Chapter
+                    <br />
+                    <a href="https://dlp.org/psi/">Official Website</a>
+                </div>
+                <div className = "">
+                    "A social fraternity for gay, bi, trans, and progressive men"
+                </div>
+            </div>
+        );
+    }
+}
+class LambdaPhiEpsilon extends Component{
+    render(){
+        return(
+            <div>
+                <div className="frat-name">
+                  ΛΦΕ
+                </div>
+                <img src = {LambdaPhiEpsilonPic}/>
+                <div>
+                    Lambda Phi Epsilon
+                    <br />
+                    <a href="http://uwlambdas.com/">Official Website</a>
+                </div>
+            </div>
+        );
+    }
+}
+class OmegaDeltaPhi extends Component{
+    render(){
+        return(
+            <div>
+                <div className="frat-name">
+                    ΩΔΦ
+                </div>
+                <img src = {OmegaDeltaPhiPic} />
+                <div>
+                    Omega Delta Phi - Lambda Chapter
+
+                    <br />
+                    <a href="http://odphiuw.wixsite.com/odphi-uw">Official Website</a>
+                </div>
+                <div className = "">
+                "This Brotherhood was founded in order to provide, to ANY man, a diverse fraternal experience, which coincides with a higher education."
+                </div>
+            </div>
+        );
+    }
+}
+
+class PiAlphaPhi extends Component{
+    render(){
+        return(
+            <div>
+                <div className="frat-name">
+                    ΠΑΦ​
+                </div>
+                <img src = {PiAlphaPhiPic}/>
+                <div>
+                    Pi Alpha Phi - Xi Chapter
+                    <br />
+                    <a href="https://www.facebook.com/uwpaphi/">Official Facebook Page</a>
+                </div>
+                <div className = "">
+                    "Pi Alpha Phi is the FIRST Asian-American interest fraternity in the nation founded in 1929"
+                </div>
+            </div>
+        );
+    }
+}
+class SigmaLambdaBeta extends Component{
+    render(){
+        return(
+            <div>
+                <div className="frat-name">
+                    ΣΛΒ
+                </div>
+                <img src = {SigmaLambdaBetaPic}/>
+                <div>
+                    Sigma Lambda Beta - Phi Beta Chapter
+                    <br />
+                    <a href="http://students.washington.edu/slbuw/index2.html">Official Website</a>
+                </div>
+                <div className = "">
+                "The Phi Beta Chapter of Sigma Lambda Beta was the final link in establishing the fraternity on all four corners of the United States."
+                </div>
+            </div>
+        );
+    }
+}
+
+class OrgTitle extends Component {
+    render(){
+        return(
+            <div className="org-title">
+                Organizations
+            </div>
+        )
+    }
+}
+export default OrganizationsRoute;
