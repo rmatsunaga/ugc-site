@@ -28,6 +28,8 @@ class BlogRoute extends Component {
                     // Create html for title
 
                     title = "<div class = 'post-title'>" + res.data.items[i].title + "</div>";
+
+                    // ADD date posted
                     
                     // Following title, add blog post html
 
