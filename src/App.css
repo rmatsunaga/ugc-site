@@ -217,10 +217,11 @@ nav a:hover{
 .org-description{
   font-size: 19px;
   font-family: 'Raleway', sans-serif;
+  padding-top: 20px;
 }
 
 .individual-org{
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 /* UGC BLOG POSTS */
@@ -421,6 +422,10 @@ nav a:hover{
     }
     .frat-header{
       margin-top: 150px;
+    }
+    .individual-org{
+      width: 80%;
+      margin: 0 auto;
     }
 
     /* UGC BLOG POSTS*/
