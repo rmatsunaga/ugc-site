@@ -11,99 +11,123 @@
 
 /* Navigation Styles Start */
 
-:root{
-  --background: #4b2e83;
-}
-.navbar {
-  text-align: center;
-  z-index: 999;
-  margin-left: -150px;
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
 }
 
-.logo {
-  margin-top: 15px;
-  left: 40%;
-  position: absolute;
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-.nav-toggle{
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-  display: none;
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4CAF50;
+    color: white;
 }
 
-.nav-toggle-label{
-  position: fixed;
-  top: 3em;
-  left: 0;
-  margin-left: 1em;
-  height: 100%;
-  display: block;
-  align-items: center;
-  color: black;
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
 }
 
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after{
-  display: block;
-  background: black;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
-.nav-toggle-label span::before,
-.nav-toggle-label span::after{
-  content: '';
-  position: absolute;
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-size: 17px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
 }
-.nav-toggle-label span::before{
-  bottom: 7px;
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-.nav-toggle-label span::after {
-  top: 7px;
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
-.nav-toggle:checked ~ nav {
-  transform: scale(1,1);
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
 }
-.nav-toggle:checked ~ nav a{
-  opacity: 1;
-  transition:  opacity 150ms ease-in-out 250ms;
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
 }
-nav{
-  position: absolute;
-  text-align: left;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  color: black;
-  transform: scale(1,0);
-  transform-origin: top;
-  transition: transform 150ms ease-in-out;
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 }
-nav li {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 10em; 
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
-nav a{
-  color: black;
-  text-decoration: none;
-  font-size: 12px;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 150ms ease-in-out;
-}
-nav a:hover{
-  color: blue;
-}
+
+
 
 /*Center Text under navbar */
 
@@ -147,7 +171,7 @@ nav a:hover{
 .slide-appear.slide-appear-active{
   opacity: 1;
   transition: opacity .5s ease-in;
-}
+} */
 
 /* ABOUT PAGE */
 
@@ -291,24 +315,8 @@ nav a:hover{
     justify-content: flex-end;
     align-items: center;
   }
-  nav a{
-    color: white;
-  }
-  nav ul {
-    display: flex;
-    margin-left: 200px;
-  }
-  nav li{
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 40px;
-    margin-left: 1em;
-    margin-bottom: 0;
-    background: var(--background)
-  }
-  nav a{
-    opacity: 1;
-  }
+
+
   .landing-text{
     margin: auto;
     width: 50%;
@@ -470,36 +478,7 @@ nav a:hover{
     display: grid;
     grid-template-columns: 1fr auto  minmax(600px, 3fr) 1fr;
   }
-  .logo{
-    left: 0%;
-    margin-left: 30px;
-    margin-top: 30px;
-    position: absolute;
-  }
-  nav{
-    all: unset;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  nav a{
-    color: white;
-  }
-  nav ul {
-    display: flex;
-    margin-left: 400px;
-  }
-  nav li{
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 40px;
-    margin-bottom: 0;
-    background: var(--background)
 
-  }
-  nav a{
-    opacity: 1;
-  }
   /* Landing Page */
   .landing-text{
     position: absolute;
