@@ -16,6 +16,8 @@ import Organizations from './components/Organizations';
 import Blog from './components/Blog';
 import Calendar from './components/Calendar';
 import AchievementsAndBoards from './components/AchievementsAndBoards';
+import Achievements from './components/Achievements';
+import Boards from './components/Boards';
 
 
 
@@ -33,7 +35,8 @@ class App extends Component {
               <Route path = "/blog" component = {Blog} exact />
               <Route path = "/calendar" component = {Calendar} exact />
               <Route path = "/achievementsandboards" component = {AchievementsAndBoards} exact />
-
+              <Route path = "/achievements" component = {Achievements} exact/>
+              <Route path = "/boards" component = {Boards} exact/>
             </Switch>
           </div>
         </BrowserRouter>

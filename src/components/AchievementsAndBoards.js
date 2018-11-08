@@ -1,10 +1,21 @@
 import React, { Component } from 'react';
 import '../App.css';
+import {
+    Row,
+    Col
+  } from "reactstrap";
 
 class AchievementsAndBoards extends Component{
     render(){
         return(
-            <div className="mission-statement-header">You're a bitch</div>
+            <Row>
+                <Col></Col>
+                <Col><div className="mission-statement-header"><a href="/achievements">Normal</a></div></Col>
+                <Col><div className="mission-statement-header"><a href="/boards">Super!</a></div></Col>    
+                <Col></Col>
+            </Row>
+                
+
         );
     }
 }
