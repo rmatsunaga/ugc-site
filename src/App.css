@@ -9,6 +9,11 @@
 
 }
 
+.landing-page {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
 /* Navigation Bar */
 
 .logo {
@@ -170,6 +175,12 @@
   padding-top: 100px;
 }
 
+/* Footer */
+.footer-container {
+  text-align: center;
+  height: 50px;
+  margin-bottom: 20px;
+}
 
 /*   TABLET 1   */
 @media screen and (min-width: 575px) {

@@ -18,7 +18,8 @@ import Calendar from './components/Calendar';
 import AchievementsAndBoards from './components/AchievementsAndBoards';
 import Achievements from './components/Achievements';
 import Boards from './components/Boards';
-import presidentMessage from './components/presidentMessage';
+import PresidentMessage from './components/PresidentMessage';
+import Footer from './components/Footer';
 
 
 
@@ -38,8 +39,9 @@ class App extends Component {
               <Route path = "/achievementsandboards" component = {AchievementsAndBoards} exact />
               <Route path = "/achievements" component = {Achievements} exact/>
               <Route path = "/boards" component = {Boards} exact/>
-              <Route path = "/presidentMessage" component = {presidentMessage} exact/>
+              <Route path = "/presidentMessage" component = {PresidentMessage} exact/>
             </Switch>
+            <Footer />
           </div>
         </BrowserRouter>
 

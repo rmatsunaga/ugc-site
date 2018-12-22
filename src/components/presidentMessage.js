@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class presidentMessage extends Component{
+class PresidentMessage extends Component{
     render(){
         return(
             <div className = "container">
@@ -39,4 +39,4 @@ class presidentMessage extends Component{
 }
 
 
-export default presidentMessage;
+export default PresidentMessage;

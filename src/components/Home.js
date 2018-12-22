@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
 import Video from '../UW_intro.mp4';
-import Logo from '../ugc_logo.png';
 import {
   Row,
   Col
@@ -10,18 +8,20 @@ import {
 import '../App.css';
 import { CSSTransitionGroup } from 'react-transition-group';
 
-const HomeRoute = () => {
+class HomeRoute extends Component {
+  render() {
     return(
       <CSSTransitionGroup transitionName="slide" transitionEnterTimeout={500} transitionLeaveTimeout={500} transitionAppear={true} transitionAppearTimeout={500}>
         <LandingPage></LandingPage>
       </CSSTransitionGroup>
     );
-  };
+  }
+};
   
   class LandingPage extends Component {
     render() {
       return(
-        <div>
+        <div className = "landing-page"> 
           <video className = "ugcVideo" src = {Video} autoPlay={true} loop={true} muted  />
           <LandingPageCenterText />
         </div>
