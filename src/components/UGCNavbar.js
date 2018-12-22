@@ -47,6 +47,11 @@ class UGCNavbar extends Component {
                     About
                 </DropdownToggle>
                 <DropdownMenu right>
+                <LinkContainer to="/presidentMessage">
+                    <DropdownItem>
+                      Message from the President
+                    </DropdownItem>
+                  </LinkContainer>
                   <LinkContainer to="/about">
                     <DropdownItem>
                       Overview

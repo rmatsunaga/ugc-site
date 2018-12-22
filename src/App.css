@@ -65,16 +65,17 @@
 
 /* ABOUT PAGE */
 
-.mission-statement{
+.mission-statement {
   display: block;
 }
 
-.mission-statement-header, .purpose-title, .about-title, .pillar-title{
-  margin-top: 120px;
+.mission-statement-header, .purpose-title, .about-title, .pillar-title, .president-header{
+  margin-top: 60px;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   text-align: center;
 }
+
 
 .mission-statement-body{
   font-family: 'Barlow', sans-serif;
@@ -179,6 +180,8 @@
   .left-col{
     margin-right: 70px;
   }
+
+  
 }
 
 /* NavBar Toggle changes*/
@@ -186,22 +189,16 @@
   .navBar {
     z-index: 100;
   }
+  
 }
 
 /*   SMOL WINDOW OPEN   */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
 
   header{
     display: grid;
     grid-template-columns: 1fr auto  minmax(400px, 3fr) 1fr;
   }
-  nav{
-    all: unset;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
 
   .landing-text{
     margin: auto;
