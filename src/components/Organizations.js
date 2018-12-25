@@ -19,6 +19,7 @@ import LambdaPhiEpsilonPic from './organizationPics/frat/LambdaPhiEpsilon.jpg';
 import OmegaDeltaPhiPic from './organizationPics/frat/OmegaDeltaPhi.png';
 import PiAlphaPhiPic from './organizationPics/frat/PiAlphaPhi.png';
 import SigmaLambdaBetaPic from './organizationPics/frat/SigmaLambdaBeta.jpg';
+import Footer from './OrganizationFooter';
 
 
 
@@ -26,6 +27,7 @@ const OrganizationsRoute = () => {
     return(
       <CSSTransitionGroup transitionName="slide" transitionEnterTimeout={500} transitionLeaveTimeout={500} transitionAppear={true} transitionAppearTimeout={500}>
         <Organizations />
+        <Footer />
       </CSSTransitionGroup>
     );
   };

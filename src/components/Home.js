@@ -7,6 +7,7 @@ import {
 //import "bootstrap/dist/css/bootstrap.css";
 import '../App.css';
 import { CSSTransitionGroup } from 'react-transition-group';
+import HomeFooter from './HomeFooter';
 
 class HomeRoute extends Component {
   render() {
@@ -24,6 +25,7 @@ class HomeRoute extends Component {
         <div className = "landing-page"> 
           <video className = "ugcVideo" src = {Video} autoPlay={true} loop={true} muted  />
           <LandingPageCenterText />
+          <HomeFooter />
         </div>
       );
     }

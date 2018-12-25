@@ -19,7 +19,6 @@ import AchievementsAndBoards from './components/AchievementsAndBoards';
 import Achievements from './components/Achievements';
 import Boards from './components/Boards';
 import PresidentMessage from './components/PresidentMessage';
-import Footer from './components/Footer';
 
 
 
@@ -41,7 +40,6 @@ class App extends Component {
               <Route path = "/boards" component = {Boards} exact/>
               <Route path = "/presidentMessage" component = {PresidentMessage} exact/>
             </Switch>
-            <Footer />
           </div>
         </BrowserRouter>
 

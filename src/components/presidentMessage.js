@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from './PresidentialFooter';
 
 
 class PresidentMessage extends Component{
@@ -31,7 +32,7 @@ class PresidentMessage extends Component{
                 <br />
                 University of Washington United Greek Council
 
-
+                <Footer />
             </div>
 
         );

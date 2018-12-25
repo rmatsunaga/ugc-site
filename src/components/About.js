@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import Video from '../UW_intro.mp4';
-import Logo from '../ugc_logo.png';
-import {
-  Row,
-  Col
-} from "reactstrap";
-//import "bootstrap/dist/css/bootstrap.css";
+import Footer from './AboutOverviewFooter.js';
 import '../App.css';
 import { CSSTransitionGroup } from 'react-transition-group';
 
@@ -28,6 +21,7 @@ class AboutPage extends Component{
                 <Purpose />
                 <AboutUs />
                 <Pillars />
+                <Footer />
             </div>
         );
     }

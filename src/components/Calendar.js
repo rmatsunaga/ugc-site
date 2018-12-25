@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Footer from './CalendarFooter';
 
 
 
@@ -17,6 +17,7 @@ class CalendarRoute extends Component{
                 align= "middle"
                 >
             </iframe>
+            <Footer />
 
             </div>
 
