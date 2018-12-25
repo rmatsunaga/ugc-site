@@ -5,7 +5,7 @@ class PresidentialFooter extends React.Component {
     return (
       <div className = "flex-container-presidential">
         <hr />
-        <div className = "flex-content-presidential">
+        <div className = "flex-content">
         &copy; {new Date().getFullYear()} Copyright:{" "}
             Rey Matsunaga, CJay Zhijie Hon, Ashley Djohan
         </div>

@@ -5,7 +5,7 @@ class HomeFooter extends React.Component {
     return (
       <div className = "flex-container-home">
         <hr />
-        <div className = "flex-content-home">
+        <div className = "flex-content">
         &copy; {new Date().getFullYear()} Copyright:{" "}
             Rey Matsunaga, CJay Zhijie Hon, Ashley Djohan
         </div>
