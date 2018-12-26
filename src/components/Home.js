@@ -43,7 +43,7 @@ class HomeRoute extends Component {
             <Col xs="4" sm="auto" className="left-col">
               <h3 className="">The</h3>
               </Col>
-            <Col xs="4" sm="auto" className="mid-col">
+            <Col xs="4" sm="auto" className="mid-col united-greek-council">
               <h1>UNITED</h1>
               <br />
               <h1>GREEK</h1>

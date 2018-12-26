@@ -33,15 +33,23 @@ body {
   position: absolute;
   top: 25vh;
   width: 100%;
+  font-family: trajan-pro-3, serif;
+  font-style: normal;
 }
 
+/* Style "United Greek Council"*/
 .mid-col{
   margin-left: -70px;
+  font-family: trajan-pro-3, serif;
+  font-style: normal;
+  font-weight: 200;
 }
 
 .right-col{
   border-left: 1px black solid;
   margin-left: 50px;
+  font-family: sans-serif, serif;
+  font-style: italic;
 }
 
 .slide-enter{
