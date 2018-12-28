@@ -57,7 +57,7 @@ class UGCNavbar extends Component {
                       Overview
                     </DropdownItem>
                   </LinkContainer>
-                  <LinkContainer to="/#">
+                  <LinkContainer to="/executiveboard">
                     <DropdownItem>
                       Executive Board
                     </DropdownItem>

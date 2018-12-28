@@ -19,6 +19,7 @@ import AchievementsAndBoards from './components/AchievementsAndBoards';
 import Achievements from './components/Achievements';
 import Boards from './components/Boards';
 import PresidentMessage from './components/PresidentMessage';
+import ExecutiveBoard from './components/ExecutiveBoard';
 
 
 
@@ -39,6 +40,7 @@ class App extends Component {
               <Route path = "/achievements" component = {Achievements} exact/>
               <Route path = "/boards" component = {Boards} exact/>
               <Route path = "/presidentMessage" component = {PresidentMessage} exact/>
+              <Route path = "/executiveBoard" component = {ExecutiveBoard} exact/>
             </Switch>
           </div>
         </BrowserRouter>
