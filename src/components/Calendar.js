@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Footer from './CalendarFooter';
+import Footer from './PresidentialFooter';
 
 
 
