@@ -252,8 +252,32 @@ body {
   height: 8em;
 }
 
+/* Achievements Page*/ 
+
+.achievement-container{
+  width: 90%;
+  text-align: center;
+}
+
+.achievement-title{
+  padding-top: 2em;
+  border-bottom: black solid 1px;
+  display: inline-block;
+  font-size: 20px;
+  font-familY: 'Poppins';
+  font-weight: bold;
+}
+
+.achievement-body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  font-family: 'Poppins';
+}
+
+
 /*   TABLET 1   */
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 576px) {
 
   .landing-text{
     margin-left: 60px; 
@@ -269,6 +293,36 @@ body {
 @media screen and (min-width: 766px) {
   .navBar {
     z-index: 100;
+  }
+   /* Achievements */
+   .achievement-container{
+    width: 80%;
+    text-align: center;
+  }
+  
+  .achievement-title{
+    float: left;
+    padding-top: 2em;
+    margin-left: 90px;
+    display: inline-block;
+    font-size: 30px;
+    font-familY: 'Poppins';
+    font-weight: bold;
+  }
+  
+  .achievement-body {
+    float: left;
+    padding-top: 20px;
+    margin-left: 90px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Poppins';
+  }
+
+  .achievement-container li {
+    display: inline-block;
+    text-align: center;
+    list-style: square;
   }
   
 }
@@ -434,6 +488,39 @@ body {
       text-align: center;
       margin: 0 auto;
       display: block;
+    }
+
+     /* Achievements */
+     .achievement-container{
+      width: 80%;
+      text-align: center;
+      padding-top: 10em;
+    }
+    
+    .achievement-title{
+      float: left;
+      padding-top: 2em;
+      margin-left: 90px;
+      display: inline-block;
+      font-size: 30px;
+      font-familY: 'Poppins';
+      font-weight: bold;
+    }
+    
+    .achievement-body {
+      float: left;
+      padding-top: 20px;
+      margin-left: 90px;
+      padding-bottom: 20px;
+      font-size: 16px;
+      font-family: 'Poppins';
+    }
+
+    .achievement-container li {
+      display: inline-block;
+      text-align: center;
+      list-style: square;
+      width: 100%;
     }
 
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import Footer from './PresidentialFooter.js';
 
 class Achievements extends Component{
     getAchievements = () => {
@@ -34,14 +35,16 @@ class Achievements extends Component{
         ]
 
         let achievements = []
+
         // Outer loop to create achievements
         for (let i = 0; i < points.length; i++) {
             let achievement = []
-            achievement.push(<div>{titles[i]}</div>)
-            achievement.push(<div>{achievementBody[i]}</div>)
+            achievement.push(<div className = "achievement-title">{titles[i]}</div>)
+            achievement.push(<div className = "achievement-body">{achievementBody[i]}</div>)
         
             for (let j = 0; j < points[i].length; j++) {
                 achievement.push(<li>{points[i][j]}</li>)
+                achievement.push(<br />);
             }
             achievements.push(<div>{achievement}</div>)
         }
@@ -53,7 +56,10 @@ class Achievements extends Component{
         return(
             <div> 
                 <div className="mission-statement-header">Achievements</div>
-                {this.getAchievements()}
+                <div className = "achievement-container">
+                    {this.getAchievements()}
+                </div>
+                <Footer />
             </div>
             
         );
