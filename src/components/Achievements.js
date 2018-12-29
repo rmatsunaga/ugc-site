@@ -55,7 +55,7 @@ class Achievements extends Component{
     render(){
         return(
             <div> 
-                <div className="mission-statement-header">Achievements</div>
+                <div className="achievements-header">Achievements</div>
                 <div className = "achievement-container">
                     {this.getAchievements()}
                 </div>

@@ -85,7 +85,7 @@ body {
   display: block;
 }
 
-.mission-statement-header, .purpose-title, .about-title, .pillar-title, .president-header{
+.mission-statement-header, .purpose-title, .about-title, .pillar-title, .president-header, .achievements-header, .documents-header{
   margin-top: 60px;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
@@ -254,7 +254,8 @@ body {
 
 /* Achievements Page*/ 
 
-.achievement-container{
+.achievement-container,
+.document-container{
   width: 90%;
   text-align: center;
 }
@@ -273,6 +274,15 @@ body {
   padding-bottom: 20px;
   font-size: 12px;
   font-family: 'Poppins';
+}
+
+/* Documents */
+.document-type {
+  font-family: 'Poppins';
+  font-size: 22px;
+  display: inline-block;
+  text-align: center;
+  border-bottom: black solid 1px;
 }
 
 
@@ -295,6 +305,11 @@ body {
     z-index: 100;
   }
    /* Achievements */
+  .achievements-header, .documents-header {
+    margin-top: 60px;
+    font-size: 63px;
+  }
+
    .achievement-container{
     width: 80%;
     text-align: center;
@@ -323,6 +338,11 @@ body {
     display: inline-block;
     text-align: center;
     list-style: square;
+  }
+  /* Documents */
+  .document-type {
+    margin-top: 20px;
+    font-size: 44px;
   }
   
 }

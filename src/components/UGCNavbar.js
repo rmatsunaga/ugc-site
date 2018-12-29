@@ -67,7 +67,7 @@ class UGCNavbar extends Component {
                       Achievements
                     </DropdownItem>
                   </LinkContainer>
-                  <LinkContainer to="/#">
+                  <LinkContainer to="/documents">
                     <DropdownItem>
                       Documents
                     </DropdownItem>
