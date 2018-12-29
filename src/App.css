@@ -285,6 +285,18 @@ body {
   border-bottom: black solid 1px;
 }
 
+.documents {
+  margin-top: 20px;
+}
+
+.documents a {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: black;
+  display: inline-block;
+  border-bottom: black solid 3px;
+}
+
 
 /*   TABLET 1   */
 @media screen and (min-width: 576px) {
@@ -343,6 +355,9 @@ body {
   .document-type {
     margin-top: 20px;
     font-size: 44px;
+  }
+  .documents a {
+    font-size: 35px;
   }
   
 }

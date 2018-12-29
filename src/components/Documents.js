@@ -18,7 +18,8 @@ class Documents extends Component{
 
         // Outer loop to create achievements
         for(var i = 0; i < docLinks.length; i++) {
-            documents.push(<a href = {docLinks[i]} className = "document-links">{docTitles[i]}</a>);
+            documents.push(<a href = {docLinks[i]}>{docTitles[i]}</a>);
+            documents.push(<br />)
         }
         return documents
     }
@@ -32,6 +33,10 @@ class Documents extends Component{
                     <div className = "documents">
                         {this.Document()}
                     </div> 
+                    <div className = "document-type">Communication Records</div>
+                    <div className = "documents">
+                        <a href = "#">Contact Sheet</a>
+                    </div>
                 </div>
                 <Footer />
             </div>
