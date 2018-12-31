@@ -35,7 +35,7 @@ class Documents extends Component{
                     </div> 
                     <div className = "document-type">Communication Records</div>
                     <div className = "documents">
-                        <a href = "#">Contact Sheet</a>
+                        <a href = "https://docs.google.com/spreadsheets/d/15lQTSvBKosZRyeveP4yFzgeDPFC-dxwVz8SFzvWqYoI/edit#gid=0">Contact Sheet</a>
                     </div>
                 </div>
                 <Footer />
