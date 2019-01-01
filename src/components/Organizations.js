@@ -19,7 +19,7 @@ import LambdaPhiEpsilonPic from './organizationPics/frat/LambdaPhiEpsilon.jpg';
 import OmegaDeltaPhiPic from './organizationPics/frat/OmegaDeltaPhi.png';
 import PiAlphaPhiPic from './organizationPics/frat/PiAlphaPhi.png';
 import SigmaLambdaBetaPic from './organizationPics/frat/SigmaLambdaBeta.jpg';
-import Footer from './OrganizationFooter';
+import Footer from './PresidentialFooter';
 
 
 
