@@ -27,50 +27,95 @@ const OrganizationsRoute = () => {
     return(
       <CSSTransitionGroup transitionName="slide" transitionEnterTimeout={500} transitionLeaveTimeout={500} transitionAppear={true} transitionAppearTimeout={500}>
         <Organizations />
+        <OldOrganizations />
         <Footer />
       </CSSTransitionGroup>
     );
   };
 
-class Organizations extends Component {
-    render(){
-        return(
-            <div className="org-text">
-                <OrgTitle />
-                <Row className="full-width">
-                    <Col>
-                        <div className="frat-header">
-                            Fraternities
-                        </div>
-                        <div className="fraternities"> 
-                            <DeltaLambdaPhi />
-                            <LambdaPhiEpsilon />
-                            <OmegaDeltaPhi />
-                            <PiAlphaPhi />
-                            <SigmaLambdaBeta />
-                        </div>
-                    </Col>
-                    <Col>
-                        <div className="frat-header">
-                            Sororities
-                        </div>
-                        <div className = "sororities">
-                            <AlphaKappaDeltaPhi />
-                            <ChiSigmaAlpha />
-                            <DeltaKappaDelta />
-                            <GammaAlphaOmega />
-                            <LambdaThetaAlpha />
-                            <PiNuIota />
-                            <SigmaLambdaGamma />
-                            <SigmaPsiZeta />
-                        </div>
-                    </Col>
-                </Row>
-
-            </div>
-        );
-    }
+const OldOrganizations = () => {
+    return(
+        <Row>
+            <Col>
+                <div className = "old-org-container">
+                    <OldOrganizationTitle />
+                    <OldOrganizationNames />
+                </div>
+            </Col>
+        </Row>
+    );
 }
+
+const OldOrganizationTitle = () => {
+    return(
+        <div className = "old-org-title">
+            Former Organizations
+        </div>
+    );
+}
+
+const GetOldNames = () => {
+    let oldNames = [
+        "Delta Phi Omega (defunct)",
+        "Kappa Kappa Psi (disassociated)",
+        "Phi Sigma Rho (disassociated)",
+        "Sigma Beta Rho (defunct)",
+        "Zeta Kappa Epsilon (defunct)",
+        "Delta Lambda Phi (disassociated)",
+        "Pi Nu Iota (inactive)"
+    ]
+    let names = []
+    for(var i = 0; i < oldNames.length; i++) {
+        names.push(<li className = "old-org-names">{oldNames[i]}</li>);
+    }
+    return names;
+}
+
+const OldOrganizationNames = () => {
+    return(
+        <div>
+            {GetOldNames()}
+        </div>
+    );
+}
+
+const Organizations = () => {
+    return(
+        <div className="org-text">
+            <OrgTitle />
+            <Row className="full-width">
+                <Col>
+                    <div className="frat-header">
+                        Fraternities
+                    </div>
+                    <div className="fraternities"> 
+                        {/* <DeltaLambdaPhi /> */}
+                        <LambdaPhiEpsilon />
+                        <OmegaDeltaPhi />
+                        <PiAlphaPhi />
+                        <SigmaLambdaBeta />
+                    </div>
+                </Col>
+                <Col>
+                    <div className="frat-header">
+                        Sororities
+                    </div>
+                    <div className = "sororities">
+                        <AlphaKappaDeltaPhi />
+                        <ChiSigmaAlpha />
+                        <DeltaKappaDelta />
+                        <GammaAlphaOmega />
+                        <LambdaThetaAlpha />
+                        {/*<PiNuIota />*/}
+                        <SigmaLambdaGamma />
+                        <SigmaPsiZeta />
+                    </div>
+                </Col>
+            </Row>
+        </div>
+    );
+}
+
 
 const SigmaPsiZeta = () => {
     return(
@@ -109,7 +154,7 @@ const SigmaLambdaGamma = () => {
         </div>
     );
 }
-
+/*
 const PiNuIota = () => {
     return(
         <div className="individual-org">
@@ -128,6 +173,7 @@ const PiNuIota = () => {
         </div>
     );
 }
+*/
 
 const LambdaThetaAlpha = () => {
     return(
@@ -175,7 +221,7 @@ const DeltaKappaDelta = () => {
             </div>
             <img src = {DeltaKappaDeltaPic}/>
             <div className="org-name">
-                Delta Kappa Delta -  UW Colony
+                Delta Kappa Delta
                 <br />
                 <a href="https://www.facebook.com/dkduw/">Official Facebook Page</a>
             </div>
@@ -223,7 +269,7 @@ const AlphaKappaDeltaPhi = () => {
         </div>
     );
 }
-
+/*
 const DeltaLambdaPhi = () => {
     return(
         <div className="individual-org">
@@ -242,6 +288,7 @@ const DeltaLambdaPhi = () => {
         </div>
     );
 }
+*/
 
 const LambdaPhiEpsilon = () => {
     return(

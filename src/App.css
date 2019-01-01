@@ -125,15 +125,12 @@ body {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   border-bottom: 1px solid black;
+  display: inline-block;
 }
 
 .frat-header{
   font-family: 'Poppins', sans-serif;
   font-size: 49px;
-}
-
-.sororities{
-  border-left: 1px black dotted;
 }
 
 .frat-name {
@@ -153,6 +150,25 @@ body {
 
 .individual-org{
   padding-top: 50px;
+}
+
+.old-org-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.old-org-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 23px;
+  text-align: center;
+  display: inline-block;
+  border-bottom: solid black 1px;
+}
+
+.old-org-names {
+  font-family: 'Raleway', sans-serif;
+  font-size: 19px;
+
 }
 
 /* UGC BLOG POSTS */
@@ -300,22 +316,39 @@ body {
 
 /*   TABLET 1   */
 @media screen and (min-width: 576px) {
-
   .landing-text{
     margin-left: 60px; 
   }
   .left-col{
     margin-right: 70px;
   }
-
-  
 }
+@media screen and (min-width: 654px) {
 
+  /* Organizations */
+  .frat-header{
+    margin-top: 100px;
+  }
+  .sororities {
+    border-left: dotted black 1px;
+  }
+  .old-org-title {
+    margin-top: 50px;
+    font-size: 43px;
+  }
+  
+  .old-org-names {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+  
+  }
+}
 /* NavBar Toggle changes*/
 @media screen and (min-width: 766px) {
   .navBar {
     z-index: 100;
   }
+ 
    /* Achievements */
   .achievements-header, .documents-header {
     margin-top: 60px;
@@ -488,6 +521,7 @@ body {
     .frat-header{
       margin-top: 150px;
     }
+
     .individual-org{
       width: 80%;
       margin: 0 auto;
