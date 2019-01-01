@@ -632,7 +632,7 @@ body {
   .landing-text{
     position: absolute;
     top: 25vh;
-    width: 100%;
+    width: 80%;
   }
   .left-col h3{
     font-size: 40px;
