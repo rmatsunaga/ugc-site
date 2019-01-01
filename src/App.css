@@ -313,6 +313,33 @@ body {
   border-bottom: black solid 3px;
 }
 
+/* Contact Page*/
+
+.contact-container {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-title, .contact-social-media-title {
+  margin-top: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  display: inline-block;
+  border-bottom: solid black 1px;
+}
+.contact-form-container {
+  display: inline-block;
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.social-media-icons {
+  padding-top: 30px;
+}
+
 
 /*   TABLET 1   */
 @media screen and (min-width: 576px) {

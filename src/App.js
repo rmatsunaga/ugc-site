@@ -21,6 +21,7 @@ import PresidentMessage from './components/PresidentMessage';
 import ExecutiveBoard from './components/ExecutiveBoard';
 import Documents from './components/Documents';
 import History from './components/History';
+import Contact from './components/Contact';
 
 
 
@@ -43,6 +44,7 @@ class App extends Component {
               <Route path = "/executiveBoard" component = {ExecutiveBoard} exact/>
               <Route path = "/documents" component = {Documents} exact/>
               <Route path = "/history" component = {History} exact/>
+              <Route path = "/contact" component = {Contact} exact/>
             </Switch>
           </div>
         </BrowserRouter>

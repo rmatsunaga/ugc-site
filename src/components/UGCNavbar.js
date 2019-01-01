@@ -89,7 +89,7 @@ class UGCNavbar extends Component {
                 <NavLink href = '/calendar'>Calendar</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href = '/#'>Contact</NavLink>
+                <NavLink href = '/contact'>Contact</NavLink>
               </NavItem>
               
             </Nav>
