@@ -16,7 +16,6 @@ import Organizations from './components/Organizations';
 import Blog from './components/Blog';
 import Calendar from './components/Calendar';
 import Achievements from './components/Achievements';
-import Boards from './components/Boards';
 import PresidentMessage from './components/PresidentMessage';
 import ExecutiveBoard from './components/ExecutiveBoard';
 import Documents from './components/Documents';
@@ -41,7 +40,6 @@ class App extends Component {
               <Route path = "/blog" component = {Blog} exact />
               <Route path = "/calendar" component = {Calendar} exact />
               <Route path = "/achievements" component = {Achievements} exact/>
-              <Route path = "/boards" component = {Boards} exact/>
               <Route path = "/presidentMessage" component = {PresidentMessage} exact/>
               <Route path = "/executiveBoard" component = {ExecutiveBoard} exact/>
               <Route path = "/executiveBoard/current" component = {CurrentEbod} exact/>
