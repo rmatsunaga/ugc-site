@@ -1,17 +1,15 @@
 import React from "react";
 
-class PresidentialFooter extends React.Component {
-  render() {
-    return (
-      <div className = "flex-container-presidential">
-        <hr />
-        <div className = "flex-content">
-        &copy; {new Date().getFullYear()} Copyright:{" "}
-            Rey Matsunaga, CJay Zhijie Hon, Ashley Djohan
-        </div>
+const PresidentialFooter = () => {
+  return (
+    <div className = "flex-container-presidential">
+      <hr />
+      <div className = "flex-content">
+      &copy; {new Date().getFullYear()} Copyright:{" "}
+          Rey Matsunaga, CJay Zhijie Hon, Ashley Djohan
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default PresidentialFooter;

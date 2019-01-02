@@ -12,9 +12,9 @@ import ChiSigmaAlphaPic from './organizationPics/sor/ChiSigmaAlpha.jpg';
 import DeltaKappaDeltaPic from './organizationPics/sor/DeltaKappaDelta.png';
 import GammaAlphaOmegaPic from './organizationPics/sor/GammaAlphaOmega.png';
 import LambdaThetaAlphaPic from './organizationPics/sor/LambdaThetaAlpha.png';
-import PiNuIotaPic from './organizationPics/sor/PiNuIota.jpg';
+/* import PiNuIotaPic from './organizationPics/sor/PiNuIota.jpg';*/
 import SigmaLambdaGammaPic from './organizationPics/sor/SigmaLambdaGamma.jpg';
-import DeltaLambdaPhiPic from './organizationPics/frat/DeltaLambdaPhi.jpg';
+/* import DeltaLambdaPhiPic from './organizationPics/frat/DeltaLambdaPhi.jpg';*/
 import LambdaPhiEpsilonPic from './organizationPics/frat/LambdaPhiEpsilon.jpg';
 import OmegaDeltaPhiPic from './organizationPics/frat/OmegaDeltaPhi.png';
 import PiAlphaPhiPic from './organizationPics/frat/PiAlphaPhi.png';
