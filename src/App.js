@@ -22,6 +22,8 @@ import ExecutiveBoard from './components/ExecutiveBoard';
 import Documents from './components/Documents';
 import History from './components/History';
 import Contact from './components/Contact';
+import PastEbod from './components/EbodPast';
+import CurrentEbod from './components/EbodCurrent';
 
 
 
@@ -42,6 +44,8 @@ class App extends Component {
               <Route path = "/boards" component = {Boards} exact/>
               <Route path = "/presidentMessage" component = {PresidentMessage} exact/>
               <Route path = "/executiveBoard" component = {ExecutiveBoard} exact/>
+              <Route path = "/executiveBoard/current" component = {CurrentEbod} exact/>
+              <Route path = "/executiveBoard/past" component = {PastEbod} exact/>
               <Route path = "/documents" component = {Documents} exact/>
               <Route path = "/history" component = {History} exact/>
               <Route path = "/contact" component = {Contact} exact/>
