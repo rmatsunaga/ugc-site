@@ -354,8 +354,26 @@ body {
   font-size: 16px;
   text-align: center;
   padding-bottom: 40px;
+  color: black;
 }
-
+.member-container{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.ebod-member-positions, 
+.ebod-member-names,
+.ebod-member-orgs,
+.ebod-member-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+.ebod-member-names, 
+.ebod-member-orgs,
+.ebod-member-description {
+  padding-top: 15px;
+  font-weight: normal;
+}
 
 /*   TABLET 1   */
 @media screen and (min-width: 576px) {

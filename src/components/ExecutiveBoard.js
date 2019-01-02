@@ -36,13 +36,13 @@ const BoardPaths = () => {
                 <Col>
                     <a href = "/executiveboard/current">
                         <img src = {CurrentPic} />
-                        <div>Current Executive Board</div>
+                        <div className = 'ebod-text'>Current Executive Board</div>
                     </a>
                 </Col>
                 <Col>
                     <a href = "/executiveboard/past">
                         <img src = {PastPic} />
-                        <div>Past Executive Boards</div>
+                        <div className = 'ebod-text'>Past Executive Boards</div>
                     </a>
                 </Col>
             </Row>
