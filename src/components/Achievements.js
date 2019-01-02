@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Footer from './PresidentialFooter.js';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 class Achievements extends Component{
     getAchievements = () => {
@@ -54,13 +55,15 @@ class Achievements extends Component{
 
     render(){
         return(
-            <div> 
-                <div className="achievements-header">Achievements</div>
-                <div className = "achievement-container">
-                    {this.getAchievements()}
+            <CSSTransitionGroup transitionName="slide" transitionEnterTimeout={500} transitionLeaveTimeout={500} transitionAppear={true} transitionAppearTimeout={500}>
+                <div> 
+                    <div className="achievements-header">Achievements</div>
+                    <div className = "achievement-container">
+                        {this.getAchievements()}
+                    </div>
+                    <Footer />
                 </div>
-                <Footer />
-            </div>
+            </CSSTransitionGroup>
             
         );
     }

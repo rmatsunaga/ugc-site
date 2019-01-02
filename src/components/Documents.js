@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Footer from './PresidentialFooter.js';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 class Documents extends Component{
     Document = () => {
@@ -26,20 +27,23 @@ class Documents extends Component{
 
     render(){
         return(
-            <div> 
-                <div className="documents-header">Documents</div>
-                <div className = "document-container">
-                    <div className = "document-type">Incorporating Articles</div>
-                    <div className = "documents">
-                        {this.Document()}
-                    </div> 
-                    <div className = "document-type">Communication Records</div>
-                    <div className = "documents">
-                        <a href = "https://docs.google.com/spreadsheets/d/15lQTSvBKosZRyeveP4yFzgeDPFC-dxwVz8SFzvWqYoI/edit#gid=0">Contact Sheet</a>
+            <CSSTransitionGroup transitionName="slide" transitionEnterTimeout={500} transitionLeaveTimeout={500} transitionAppear={true} transitionAppearTimeout={500}>
+                <div> 
+                    <div className="documents-header">Documents</div>
+                    <div className = "document-container">
+                        <div className = "document-type">Incorporating Articles</div>
+                        <div className = "documents">
+                            {this.Document()}
+                        </div> 
+                        <div className = "document-type">Communication Records</div>
+                        <div className = "documents">
+                            <a href = "https://docs.google.com/spreadsheets/d/15lQTSvBKosZRyeveP4yFzgeDPFC-dxwVz8SFzvWqYoI/edit#gid=0">Contact Sheet</a>
+                        </div>
                     </div>
+                    <Footer />
                 </div>
-                <Footer />
-            </div>
+            </CSSTransitionGroup>
+
             
         );
     }
