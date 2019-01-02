@@ -9,6 +9,7 @@ const History = () => {
                 <div className = "president-header">
                 United Greek Council History
                 </div>
+                <br />
                 Multicultural Greek organizations began to flourish at the University of Washington in the late 90s and early 2000s. At that time, three Greek councils served ancillary roles in coordinating activities among their constituent organizations. The <a rel='noopener noreferrer' target="_blank" href = "http://www.uwifc.com/">Interfraternity Council</a> (IFC) governed traditionally white fraternities, the <a target="_blank" rel='noopener noreferrer' href = "https://www.uwpanhellenic.com/">Panhellenic Association</a> (PHA) governed traditionally white sororities, and the <a target="_blank" rel='noopener noreferrer' href = "http://students.washington.edu/nphc/">National Pan-Hellenic Council</a> (NPHC) governed fraternities and sororities of African ancestry. However, organizations with interests outside these councils had no formal structure for organizing or collaborating.
                 <br />
                 <br />
