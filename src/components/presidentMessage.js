@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Footer from './PresidentialFooter';
 import { CSSTransitionGroup } from 'react-transition-group';
 

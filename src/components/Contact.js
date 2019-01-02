@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import InstagramIcon from './contactPics/instagram.png';
 import FacebookIcon from './contactPics/facebook.jpg';
 import {
@@ -49,12 +49,12 @@ const SocialMedia = () => {
             <div className = "contact-social-media-title">Follow Us on Social Media!</div>
             <Row>
                 <Col className = "social-media-icons">
-                    <a target="_blank" href = "https://www.instagram.com/uwugc/">
+                    <a target="_blank" rel='noopener noreferrer' href = "https://www.instagram.com/uwugc/">
                     <img src={InstagramIcon} alt="" className="logo"/>
                     </a>
                 </Col>
                 <Col className = "social-media-icons">
-                    <a target="_blank" href = "https://www.facebook.com/uwugc/">
+                    <a target="_blank" rel='noopener noreferrer' href = "https://www.facebook.com/uwugc/">
                         <img src={FacebookIcon} alt="" className="logo"/>
                     </a>   
                 </Col>
@@ -66,7 +66,7 @@ const SocialMedia = () => {
 const ContactForm = () => {
     return(
         <div className = "contact-form-container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJm3-66uVKPikZxKhXxlT-ozNSbzUodzZQgkB9pVQjZCbOGg/viewform?embedded=true" width="640" height="824" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            <iframe title = "contact form"src="https://docs.google.com/forms/d/e/1FAIpQLSdJm3-66uVKPikZxKhXxlT-ozNSbzUodzZQgkB9pVQjZCbOGg/viewform?embedded=true" width="640" height="824" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
         </div>
     );
 }

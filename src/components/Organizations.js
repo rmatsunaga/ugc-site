@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Row,
   Col
@@ -123,7 +123,7 @@ const SigmaPsiZeta = () => {
         <div className="frat-name">
             ΣΨΖ​
         </div>
-        <img src={SigmaPsiZetaPic}/>
+        <img alt = "" src={SigmaPsiZetaPic}/>
         <div className="org-name">
             Sigma Psi Zeta - Rho Chapter
             <br />
@@ -142,7 +142,7 @@ const SigmaLambdaGamma = () => {
         <div className="frat-name">
             ΣΛΓ
         </div>
-        <img src={SigmaLambdaGammaPic}/>
+        <img alt = "" src={SigmaLambdaGammaPic}/>
         <div className="org-name">
             Sigma Lambda Gamma - Upsilon Gamma Chapter
             <br />
@@ -161,7 +161,7 @@ const PiNuIota = () => {
         <div className="frat-name">
             ΠΝΙ
         </div>
-        <img src = {PiNuIotaPic}/>
+        <img alt = "" src = {PiNuIotaPic}/>
         <div className="org-name">
             Pi Nu Iota - Alpha Chapter
             <br />
@@ -181,7 +181,7 @@ const LambdaThetaAlpha = () => {
         <div className="frat-name">
             ΛΘΑ​
         </div >
-        <img src = {LambdaThetaAlphaPic}/>
+        <img alt = "" src = {LambdaThetaAlphaPic}/>
         <div className="org-name">
             Lambda Theta Alpha - Gamma Omicron Chapter
             <br />
@@ -200,7 +200,7 @@ const GammaAlphaOmega = () => {
             <div className="frat-name">
                 ΓΑΩ
             </div>
-            <img src = {GammaAlphaOmegaPic}/>
+            <img alt = "" src = {GammaAlphaOmegaPic}/>
             <div className="org-name">
                 Gamma Alpha Omega - Gamma Chapter
                 <br />
@@ -219,7 +219,7 @@ const DeltaKappaDelta = () => {
             <div className="frat-name">
                 ΔΚΔ
             </div>
-            <img src = {DeltaKappaDeltaPic}/>
+            <img alt = "" src = {DeltaKappaDeltaPic}/>
             <div className="org-name">
                 Delta Kappa Delta
                 <br />
@@ -238,7 +238,7 @@ const ChiSigmaAlpha = () => {
             <div className="frat-name">
                 ΧΣΑ
             </div>
-            <img src = {ChiSigmaAlphaPic}/>
+            <img alt = "" src = {ChiSigmaAlphaPic}/>
             <div className="org-name">
                 Chi Sigma Alpha - Alpha Chapter
                 <br />
@@ -257,7 +257,7 @@ const AlphaKappaDeltaPhi = () => {
             <div className="frat-name">
                 αΚΔΦ
             </div>
-            <img src = {AKDPhiPic}/>
+            <img alt = "" src = {AKDPhiPic}/>
             <div className="org-name">
                 alpha Kappa Delta Phi - Pi Chapter
                 <br />
@@ -276,7 +276,7 @@ const DeltaLambdaPhi = () => {
             <div className="frat-name">
                 ΔΛΦ
             </div>
-            <img src = {DeltaLambdaPhiPic}/>
+            <img alt = "" src = {DeltaLambdaPhiPic}/>
             <div className="org-name">
                 Delta Lambda Phi - Psi Chapter
                 <br />
@@ -296,7 +296,7 @@ const LambdaPhiEpsilon = () => {
             <div className="frat-name">
               ΛΦΕ
             </div>
-            <img src = {LambdaPhiEpsilonPic}/>
+            <img alt = "" src = {LambdaPhiEpsilonPic}/>
             <div className="org-name">
                 Lambda Phi Epsilon
                 <br />
@@ -312,7 +312,7 @@ const OmegaDeltaPhi = () => {
             <div className="frat-name">
                 ΩΔΦ
             </div>
-            <img src = {OmegaDeltaPhiPic} />
+            <img alt = "" src = {OmegaDeltaPhiPic} />
             <div className="org-name"> 
                 Omega Delta Phi - Lambda Chapter
 
@@ -332,7 +332,7 @@ const PiAlphaPhi = () => {
             <div className="frat-name">
                 ΠΑΦ​
             </div>
-            <img src = {PiAlphaPhiPic}/>
+            <img alt = "" src = {PiAlphaPhiPic}/>
             <div className="org-name">
                 Pi Alpha Phi - Xi Chapter
                 <br />
@@ -351,7 +351,7 @@ const SigmaLambdaBeta = () => {
             <div className="frat-name">
                 ΣΛΒ
             </div>
-            <img src = {SigmaLambdaBetaPic}/>
+            <img alt = "" src = {SigmaLambdaBetaPic}/>
             <div className="org-name">
                 Sigma Lambda Beta - Phi Beta Chapter
                 <br />

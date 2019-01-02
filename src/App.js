@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
-import Video from './UW_intro.mp4';
-import Logo from './ugc_logo.png';
-import {
-  Row,
-  Col
-} from "reactstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import './App.css';
-import { CSSTransitionGroup } from 'react-transition-group';
 import  HomeRoute  from './components/Home';
 import AboutRoute from './components/About';
 import UGCNavbar from './components/UGCNavbar';

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Video from '../UW_intro.mp4';
 import {
   Row,

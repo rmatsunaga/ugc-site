@@ -36,7 +36,7 @@ class BlogRoute extends Component {
                     
                     // Following title, add blog post html
 
-                    text += "<div class= 'post-container'>" + "<div class='single-post'>" + title + res.data.items[i].content + "</div> </div>";
+                    text += "<div class= 'post-container'><div class='single-post'>" + title + res.data.items[i].content + "</div> </div>";
                 }
                 this.setState({
                     posts: text,                

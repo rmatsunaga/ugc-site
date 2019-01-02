@@ -92,13 +92,13 @@ class EbodCurrent extends Component {
     EbodBody = () => {
         let member = []
         let memberPic = [
-            <img className = "eboc-member-pic" src = {LuisPic}/>,
-            <img className = "eboc-member-pic" src = {GenezaratPic}/>,
-            <img className = "eboc-member-pic" src = {SarahPic}/>,
-            <img className = "eboc-member-pic" src = {TonyPic}/>,
-            <img className = "eboc-member-pic" src = {MailePic}/>,
-            <img className = "eboc-member-pic" src = {WendyPic}/>,
-            <img className = "eboc-member-pic" src = {CjayPic}/>
+            <img alt = "" className = "eboc-member-pic" src = {LuisPic}/>,
+            <img alt = "" className = "eboc-member-pic" src = {GenezaratPic}/>,
+            <img alt = "" className = "eboc-member-pic" src = {SarahPic}/>,
+            <img alt = "" className = "eboc-member-pic" src = {TonyPic}/>,
+            <img alt = "" className = "eboc-member-pic" src = {MailePic}/>,
+            <img alt = "" className = "eboc-member-pic" src = {WendyPic}/>,
+            <img alt = "" className = "eboc-member-pic" src = {CjayPic}/>
         ]
         for(var i = 0; i < memberPic.length; i++) {
             if(i % 2 === 0) {
