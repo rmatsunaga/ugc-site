@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 import axios from 'axios';
 import Footer from './PresidentialFooter';
+
 const Blog = () => {
     return(
       <CSSTransitionGroup transitionName="slide" transitionEnterTimeout={500} transitionLeaveTimeout={500} transitionAppear={true} transitionAppearTimeout={500}>
