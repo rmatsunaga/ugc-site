@@ -103,10 +103,6 @@ body {
   text-align: center;
 }
 
-.our-pillars{
-
-}
-
 /*   ORGANIZATIONS   */
 .full-width{
   width: 100%;
@@ -341,14 +337,40 @@ body {
 }
 
 
+/* Executive Board */
+.ebod-container{
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.ebod-title {
+  font-size: 33px;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  border-bottom: solid black 1px;
+}
+
+.ebod-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+
 /*   TABLET 1   */
 @media screen and (min-width: 576px) {
+  /* Home Page */
   .landing-text{
     margin-left: 60px; 
   }
   .left-col{
     margin-right: 70px;
   }
+  .ebod-text {
+    padding-top: 40px;
+  }
+
 }
 @media screen and (min-width: 654px) {
 
@@ -420,6 +442,17 @@ body {
     font-size: 35px;
   }
   
+  /* Executive Board */
+  .ebod-container{
+    width: 80%;
+  }
+  .ebod-title {
+    font-size: 63px;
+  }
+  .ebod-text {
+    font-size: 22px;
+  }
+
 }
 
 /*   SMOL WINDOW OPEN   */
@@ -620,7 +653,7 @@ body {
 
 }
 
-/*   BIGG SCREEN   */
+/*   BIG SCREEN   */
 @media screen and (min-width: 1259px) {
 
   header{

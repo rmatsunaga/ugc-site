@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Footer from './AboutOverviewFooter.js';
+import Footer from './PresidentialFooter.js';
 import { CSSTransitionGroup } from 'react-transition-group';
 import {
     Row,
@@ -31,20 +31,23 @@ class ExecutiveBoard extends Component{
 
 const BoardPaths = () => {
     return(
-        <Row>
-            <Col>
-                <a href = "/executiveboard/current">
-                    <img src = {CurrentPic} />
-                    <div>Current Executive Board</div>
-                </a>
-            </Col>
-            <Col>
-                <a href = "/executiveboard/past">
-                    <img src = {PastPic} />
-                    <div>Past Executive Boards</div>
-                </a>
-            </Col>
-        </Row>
+        <div className = "ebod-container">
+            <Row>
+                <Col>
+                    <a href = "/executiveboard/current">
+                        <img src = {CurrentPic} />
+                        <div>Current Executive Board</div>
+                    </a>
+                </Col>
+                <Col>
+                    <a href = "/executiveboard/past">
+                        <img src = {PastPic} />
+                        <div>Past Executive Boards</div>
+                    </a>
+                </Col>
+            </Row>
+        </div>
+        
 
     );
 }
@@ -52,9 +55,9 @@ const BoardPaths = () => {
 class ExecStatement extends Component{
     render(){
         return(
-            <div className="">
-                <h1 className="">Executive Board</h1>
-                <div className="">
+            <div className="ebod-container">
+                <h1 className="ebod-title">Executive Board</h1>
+                <div className="ebod-text">
                  
                 The Executive Board of Directors (EBOD) are a student-run body that work behind the scenes to aid the efficient operations of UGC while representing the entity as a whole. Officers are involved with a variety of multidisciplinary efforts that include creating and executing programs and events to serve UGC and UW, maintaining chapters dues and budgeting, expanding our community, or keeping a strong presence through marketing and social media.
 
