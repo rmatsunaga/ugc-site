@@ -101,7 +101,7 @@ class EbodCurrent extends Component {
             <img alt = "" className = "eboc-member-pic" src = {CjayPic}/>
         ]
         for(var i = 0; i < memberPic.length; i++) {
-            if(i % 2 === 0) {
+        //    if(i % 2 === 0) {
                 member.push(
                     <div className = "member-container">
                         <Row>
@@ -115,7 +115,7 @@ class EbodCurrent extends Component {
                     </div>
 
                 );
-            } else {
+        /*    } else {
                 member.push(
                     <Row>
                         <Col>
@@ -125,7 +125,7 @@ class EbodCurrent extends Component {
                             {this.GetPhoto(i, memberPic)}
                         </Col>
                     </Row>);
-            }
+            } */
             
         }
         return member;

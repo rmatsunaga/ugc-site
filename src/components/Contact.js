@@ -33,11 +33,16 @@ const Address = () => {
         <div>
             <div className = "contact-title">Address:</div>
             <div className = "contact-address"> 
+                <br />
                 Office of Fraternity and Sorority Life (OFSL)
                 <br />
                 Room 236, Husky Union Building
                 <br />
                 Seattle, WA 98195
+                <br />
+                <br />
+                Email: ugc@uw.edu
+                <br />
             </div>
         </div>
     );

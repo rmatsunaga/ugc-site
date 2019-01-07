@@ -10,7 +10,7 @@ const CalendarRoute = () => {
             <iframe 
                 src="https://calendar.google.com/calendar/embed?src=ugc%40uw.edu&ctz=America%2FLos_Angeles" 
                 style= {{border: 0}}
-                width="800" 
+                width="1000" 
                 height="600" 
                 frameborder="0" 
                 scrolling="no"
