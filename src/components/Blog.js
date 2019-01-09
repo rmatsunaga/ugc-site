@@ -30,13 +30,14 @@ class BlogRoute extends Component {
 
                     // Create html for title
 
-                    title = "<div class = 'post-title'>" + res.data.items[i].title + "</div>";
-
+                   // title = "<div class = 'post-title'>" + res.data.items[i].title + "</div>";
+                   title = "<div class = 'ebod-title'>" + res.data.items[i].title + "</div>";
                     // ADD date posted
                     
                     // Following title, add blog post html
 
-                    text += "<div class= 'post-container'><div class='single-post'>" + title + res.data.items[i].content + "</div> </div>";
+                    //text += "<div class= 'post-container'><div class='single-post'>" + title + res.data.items[i].content + "</div> </div>";
+                    text += "<div class= 'single-post'><div class='ebod-text'>" + title + res.data.items[i].content + "</div> </div>";
                 }
                 this.setState({
                     posts: text,                
